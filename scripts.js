@@ -23,7 +23,7 @@
             'animixplay.to',
             'discord.com',
             'wikipedia.org',
-            'twitter.org',
+            'twitter.com',
             'instagram.com',
             'office.com',
             'google.com',
@@ -42,7 +42,7 @@
                     return term
                 }
             })
-            res = document.getElementById('autocomplete');
+            res = document.querySelector('#autocomplete');
             var list = '';
             terms.forEach(link => list += '<li>' + `<a href="https://${link}">${link}</a>` + '</li>');
             res.innerHTML = '<ul>' + list + '</ul>';
